@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aeee</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fbe9e7;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        h1 {
+            color: #d81b60;
+        }
+        .button {
+            background-color: #f06292;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #ec407a;
+        }
+        .button-animado {
+            position: relative;
+            display: inline-block;
+            transition: transform 0.2s ease;
+        }
+        .button-animado:hover {
+            animation: animar 1s infinite;
+        }
+        @keyframes animar {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(-500px, -500px); }
+            50% { transform: translate(500px, -500px); }
+            75% { transform: translate(-500px, 500px); }
+            100% { transform: translate(500px, 500px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cuuuuuuuzin Hoje?</h1>
+        <a href="https://www.youtube.com/watch?v=Kr1ciXbZOOU" class="button">Sim</a>
+        <a href="#" class="button button-animado">Não</a>
+    </div>
+</body>
+</html>
